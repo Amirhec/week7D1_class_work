@@ -36,6 +36,9 @@ class User < ApplicationRecord
         self.save!
         self.session_token
     end
+    attr_reader :password
+
+
 
     private 
 
@@ -43,8 +46,5 @@ class User < ApplicationRecord
         self.session_token ||= SecureRandom::urlsafe_base64
     end
 
-    attr_reader :password
-
-
-
+   
 end

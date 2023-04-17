@@ -1,6 +1,6 @@
 <h2> Login</h2>
 
-<form action = "<%= session_url%>" method= "POST">
+<form action = "<%= session_url %>" method= "POST">
 <label> Username:
 <input type = "text", name = "user[username]", value = "<%= @user.username%>">
 </label>
@@ -8,7 +8,7 @@
 <br>
 
 <label> Password:
-<input type = "text", name = "user[password]", value = "">
+<input type = "password", name = "user[password]", value = "">
 </label>
 
 <br>
